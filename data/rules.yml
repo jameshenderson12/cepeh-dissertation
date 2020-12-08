@@ -24,6 +24,20 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+- story: User asks for help with their dissertation.
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: help_dissertation
+  - action: utter_dissertation_help
+- story: User starts conversation about help with their dissertation.
+  steps:
+  - intent: help_dissertation
+  - action: utter_dissertation_help
+  - intent: affirm
+  - action: help_dissertation_activities
 rules:
 - rule: Say goodbye anytime the user says goodbye
   steps:
