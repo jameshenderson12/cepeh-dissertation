@@ -9,10 +9,7 @@ intents:
 - mood_great
 - mood_unhappy
 - bot_challenge
-slots:
-  name:
-    type: text
-    influence_conversation: true
+- help_dissertation
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -27,3 +24,8 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_dissertation_help:
+  - text: Would you like some assistance with how to get started with your dissertation?
+  utter_dissertation_activities:
+  - text: What is it about your dissertation that I can help you with? Examples of
+      what I can assist with include "framing a title", "deciding a topic" or "structure".
