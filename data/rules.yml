@@ -1,12 +1,12 @@
 version: "2.0"
 stories:
-- story: happy mood
+- story: User is welcomed and reveals happy mood.
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
-- story: sad mood but cheered up
+- story: User is welcomed and reveals sad mood but is cheered up.
   steps:
   - intent: greet
   - action: utter_greet
@@ -15,7 +15,7 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-- story: sad mood and unable to cheer up
+- story: User is welcomed but reveals sad mood and is unable to cheer up.
   steps:
   - intent: greet
   - action: utter_greet
