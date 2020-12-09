@@ -29,3 +29,10 @@ responses:
   utter_dissertation_activities:
   - text: What is it about your dissertation that I can help you with? Examples of
       what I can assist with include "framing a title", "deciding a topic" or "structure".
+  utter_who_built_me:
+  - text: Although powered by Rasa, I was developed by James Henderson and Stathis
+      Konstantinidis of the Health E-Learning and Media (HELM) team at the University
+      of Nottingham. I have been developed to serve as part of the requirements of
+      the "CEPEH" Erasmus+ project.
+actions:
+- help_dissertation_activities
