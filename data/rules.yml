@@ -38,6 +38,18 @@ stories:
   - action: utter_dissertation_help
   - intent: affirm
   - action: help_dissertation_activities
+- story: User is asked what type of help they need.
+  steps:
+  - intent: help_dissertation
+  - action: utter_dissertation_help
+  - intent: affirm
+  - action: utter_dissertation_activities
+- story: User denies needing any dissertation help.
+  steps:
+  - intent: help_dissertation
+  - action: utter_dissertation_help
+  - intent: deny
+  - action: utter_goodbye
 rules:
 - rule: Say goodbye anytime the user says goodbye
   steps:
