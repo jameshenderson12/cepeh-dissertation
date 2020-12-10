@@ -8,8 +8,14 @@ intents:
 - deny
 - mood_great
 - mood_unhappy
+- bot_challenge/iamabot
 - bot_challenge
+- bot_challenge/developers
 - help_dissertation
+slots:
+  name:
+    type: text
+    influence_conversation: true
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -34,5 +40,7 @@ responses:
       Konstantinidis of the Health E-Learning and Media (HELM) team at the University
       of Nottingham. I have been developed to serve as part of the requirements of
       the "CEPEH" Erasmus+ project.
+  utter_mnemonics:
+  - text: Framing the question...
 actions:
 - help_dissertation_activities

@@ -50,12 +50,20 @@ stories:
   - action: utter_dissertation_help
   - intent: deny
   - action: utter_goodbye
+- story: User asks who built the chatbot.
+  steps:
+  - intent: bot_challenge/developers
+  - action: utter_who_built_me
 rules:
-- rule: Say goodbye anytime the user says goodbye
+- rule: Say goodbye anytime the user says goodbye.
   steps:
   - intent: goodbye
   - action: utter_goodbye
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Say 'I am a bot' anytime the user challenges.
   steps:
-  - intent: bot_challenge
+  - intent: bot_challenge/iamabot
   - action: utter_iamabot
+- rule: Say 'who built the bot' anytime the user challenges.
+  steps:
+  - intent: bot_challenge/developers
+  - action: utter_who_built_me

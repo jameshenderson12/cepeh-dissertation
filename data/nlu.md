@@ -123,18 +123,12 @@
 - you are rubbish
 - you can't be real
 
-## intent:bot_challenge
-- are you a bot?
-- are you a human?
-- am I talking to a bot?
-- am I talking to a human?
-- who are you?
-- what are you?
-- who r u?
-- r u real?
-- you're fake
-- you are rubbish
-- you can't be real
+## intent:bot_challenge/developers
+- who built you?
+- who developed you?
+- who owns you?
+- owners
+- developers
 
 ## intent:help_dissertation
 - dissertation help
